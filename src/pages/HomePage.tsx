@@ -102,11 +102,11 @@ const HomePage = () => {
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-gold-light via-gold-DEFAULT to-gold-dark p-1">
                   <div className="rounded-full overflow-hidden w-full h-full bg-background-primary">
                     <img
-                      src="/Assets/VISHNU PHOTO.jpeg"
+                      src="/Assets/Profile.jpg"
                       alt="Vishnu J"
-                      className="w-full h-full object-cover object-center scale-105"
+                      className="w-full h-full object-cover object-center scale-150"
                       style={{
-                        objectPosition: "center 40%"
+                        objectPosition: "center 50%"
                       }}
                     />
                   </div>
@@ -262,6 +262,46 @@ const HomePage = () => {
             </motion.div>
           </div>
         </motion.div>
+      </div>
+
+      {/* Certificates Section */}
+      <div className="container px-4 sm:px-6 lg:px-8 py-16">
+        <h2 className="font-display text-4xl sm:text-5xl font-extrabold mb-6 tracking-wider-plus uppercase text-center">
+          <span className="bg-gradient-to-r from-[#FFD700] via-[#FFA500] to-[#FF4500] text-transparent bg-clip-text">
+            Certificates
+          </span>
+        </h2>
+        <div className="w-full flex justify-center">
+          <div className="flex gap-8 overflow-x-auto scrollbar-hide py-4 px-2 animate-scroll-x">
+            {/* Images */}
+            <a href="/Assets/Image Creative.jpg" target="_blank" rel="noopener noreferrer">
+              <img src="/Assets/Image Creative.jpg" alt="Image Creative Certificate" className="h-64 rounded-lg shadow-lg object-contain" />
+            </a>
+            <a href="/Assets/Udemy Certificate.jpg" target="_blank" rel="noopener noreferrer">
+              <img src="/Assets/Udemy Certificate.jpg" alt="Udemy Certificate" className="h-64 rounded-lg shadow-lg object-contain" />
+            </a>
+            <a href="/Assets/Certificate.png" target="_blank" rel="noopener noreferrer">
+              <img src="/Assets/Certificate.png" alt="Certificate" className="h-64 rounded-lg shadow-lg object-contain" />
+            </a>
+            {/* PDFs */}
+            <a href="/Assets/ICT Main Certificate.pdf" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center">
+              <img src="https://cdn.jsdelivr.net/gh/edent/SuperTinyIcons/images/svg/pdf.svg" alt="ICT Main Certificate PDF" className="h-24 mb-2" />
+              <span className="text-sm text-center text-text-secondary">ICT Main Certificate</span>
+            </a>
+            <a href="/Assets/LUB555139_Microsoft_AIBuilderChallenge.pdf" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center">
+              <img src="https://cdn.jsdelivr.net/gh/edent/SuperTinyIcons/images/svg/pdf.svg" alt="Microsoft AI Builder Challenge PDF" className="h-24 mb-2" />
+              <span className="text-sm text-center text-text-secondary">Microsoft AI Builder</span>
+            </a>
+            <a href="/Assets/LUB555139_Microsoft_MachineLearningChallenge.pdf" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center">
+              <img src="https://cdn.jsdelivr.net/gh/edent/SuperTinyIcons/images/svg/pdf.svg" alt="Microsoft Machine Learning Challenge PDF" className="h-24 mb-2" />
+              <span className="text-sm text-center text-text-secondary">Microsoft ML Challenge</span>
+            </a>
+            <a href="/Assets/Certificate of Successful Completion- Vishnu J.pdf" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center">
+              <img src="https://cdn.jsdelivr.net/gh/edent/SuperTinyIcons/images/svg/pdf.svg" alt="Certificate of Successful Completion PDF" className="h-24 mb-2" />
+              <span className="text-sm text-center text-text-secondary">Completion Certificate</span>
+            </a>
+          </div>
+        </div>
       </div>
 
       {/* Education Title */}
